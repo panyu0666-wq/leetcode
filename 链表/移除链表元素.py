@@ -8,7 +8,7 @@ class Solution:
         dummy = ListNode(next=head)
         current = dummy
         while current.next:
-            if current.val == val:
+            if current.next.val == val:
                 current.next = current.next.next
             else:
                 current = current.next
